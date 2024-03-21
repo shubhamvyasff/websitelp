@@ -25,7 +25,7 @@
             padding: 20px 0;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        header h1 {
+        header h1, header p {
             margin: 0;
             font-weight: 300;
         }
@@ -40,16 +40,31 @@
             color: #333;
         }
         section {
-            background-color: #fff;
             margin: 20px 0;
-            padding: 25px 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             text-align: center;
         }
-        .pricing {
-            background-color: #e8f0fe;
+        .pricing-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: calc(50% - 40px);
+        }
+        .pricing-card h2 {
             color: #333;
+        }
+        .pricing-details {
+            margin-top: 10px;
+            text-align: left;
+        }
+        .pricing-details ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pricing-details ul li {
+            margin-bottom: 10px;
         }
         footer {
             background-color: #fff;
@@ -74,28 +89,30 @@
     </nav>
 
     <div class="container">
-        <section id="founders">
-            <h2>Founders</h2>
-            <p>Shubham Vyas and Navdeep Parewa, a dynamic duo with a decade of friendship and innovation, leading FillFlow from Gurugram, India.</p>
-        </section>
-
-        <section id="company">
-            <h2>About Us</h2>
-            <p>Empowering brands with automated inventory management tools, reducing working capital by half and optimizing warehouse efficiency.</p>
-        </section>
-
-        <section id="pricing" class="pricing">
+        <section id="pricing">
             <h2>Pricing</h2>
-            <p>Optimize your inventory management:</p>
-            <ul>
-                <li>Brand Plan: ₹50,000/month per brand</li>
-                <li>User Plan: ₹5,000/user/device per month</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>For demos and inquiries, reach out at <a href="mailto:contact@fillflow.us">contact@fillflow.us</a></p>
+            <div class="pricing-card">
+                <h3>Brand Plan</h3>
+                <p>₹50,000/month per brand</p>
+                <div class="pricing-details">
+                    <ul>
+                        <li>Optimal for brand-wide inventory management</li>
+                        <li>Comprehensive analytics and reporting</li>
+                        <li>Seamless integration with existing workflows</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <h3>User Plan</h3>
+                <p>₹5,000/user/device per month</p>
+                <div class="pricing-details">
+                    <ul>
+                        <li>Flexible per-user, per-device pricing</li>
+                        <li>Real-time inventory management</li>
+                        <li>Dynamic inventory rebalancing</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </div>
 
