@@ -40,6 +40,13 @@
             text-decoration: none;
             color: #333;
         }
+        .section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 25px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
         .pricing-section {
             display: flex;
             justify-content: center;
@@ -88,13 +95,23 @@
     </header>
 
     <nav>
-        <a href="#founders">Founders</a>|
-        <a href="#company">Company</a>|
+        <a href="#about">About</a>|
+        <a href="#team">Team</a>|
         <a href="#pricing">Pricing</a>|
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>FillFlow is at the forefront of inventory management, offering solutions that significantly reduce working capital and optimize warehouse efficiency for D2C brands.</p>
+        </section>
+
+        <section id="team" class="section">
+            <h2>Our Team</h2>
+            <p>Founded by Shubham Vyas and Navdeep Parewa, FillFlow is driven by a decade-long friendship and a shared vision to transform inventory management through innovation and technology.</p>
+        </section>
+
         <section id="pricing" class="pricing-section">
             <div class="pricing-card">
                 <h3>Brand Plan</h3>
@@ -118,6 +135,12 @@
                     </ul>
                 </div>
             </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Get in Touch</h2>
+            <p>Interested in learning more about how FillFlow can help your business? Reach out to us!</p>
+            <p>Email: <a href="mailto:contact@fillflow.us">contact@fillflow.us</a></p>
         </section>
     </div>
 
