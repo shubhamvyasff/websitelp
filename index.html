@@ -17,6 +17,7 @@
             max-width: 1100px;
             margin: 20px auto;
             padding: 0 20px;
+            text-align: center;
         }
         header {
             background-color: #fff;
@@ -39,9 +40,10 @@
             text-decoration: none;
             color: #333;
         }
-        section {
-            margin: 20px 0;
-            text-align: center;
+        .pricing-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .pricing-card {
             background-color: #fff;
@@ -49,14 +51,13 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             padding: 20px;
             margin: 10px;
-            display: inline-block;
-            width: calc(50% - 40px);
+            width: calc(50% - 20px);
+            box-sizing: border-box;
         }
-        .pricing-card h2 {
+        .pricing-card h3 {
             color: #333;
         }
         .pricing-details {
-            margin-top: 10px;
             text-align: left;
         }
         .pricing-details ul {
@@ -72,6 +73,11 @@
             padding: 10px 0;
             font-size: 14px;
             box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .pricing-card {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -89,8 +95,7 @@
     </nav>
 
     <div class="container">
-        <section id="pricing">
-            <h2>Pricing</h2>
+        <section id="pricing" class="pricing-section">
             <div class="pricing-card">
                 <h3>Brand Plan</h3>
                 <p>₹50,000/month per brand</p>
